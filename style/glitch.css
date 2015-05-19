@@ -1,0 +1,161 @@
+/*
+Original 'Interference' by Chris Rickels
+http://codepen.io/cRckls/pen/tvbgG
+*/
+
+.buzz_wrapper{
+  background-color:#000;
+}
+
+/* glitch div animation */
+
+.buzz_wrapper div{
+  -webkit-animation: jerkwhole 60ms infinite;
+  -moz-animation: jerkwhole 60ms infinite;
+  -o-animation: jerkwhole 60ms infinite;
+}
+
+@-webkit-keyframes jerkwhole {
+  10% {}
+  40% { opacity:1;  -webkit-transform:scale(1,1);  -webkit-transform:skew(45deg,0);}
+  41% { opacity:0.8;  -webkit-transform:scale(1,1.2);  -webkit-transform:skew(50deg,0);}
+  42% { opacity:0.8;  -webkit-transform:scale(1,1.2);  -webkit-transform:skew(-80deg,0);}
+  43% { opacity:1; -webkit-transform:scale(1,1);  -webkit-transform:skew(-90deg,0);}
+  80% {}
+}
+
+@-moz-keyframes jerkwhole {
+  10% {}
+  40% { opacity:1;  -moz-transform:scale(1,1);  -moz-transform:skew(45deg,0);}
+  41% { opacity:0.8;  -moz-transform:scale(1,1.2);  -moz-transform:skew(50deg,0);}
+  42% { opacity:0.8;  -moz-transform:scale(1,1.2);  -moz-transform:skew(-80deg,0);}
+  43% { opacity:1; -moz-transform:scale(1,1);  -moz-transform:skew(-90deg,0);}
+  80% {}
+}
+
+@-o-keyframes jerkwhole {
+  10% {}
+  40% { opacity:1;  -o-transform:scale(1,1);  -o-transform:skew(45deg,0);}
+  41% { opacity:0.8;  -o-transform:scale(1,1.2);  -o-transform:skew(50deg,0);}
+  42% { opacity:0.8;  -o-transform:scale(1,1.2);  -o-transform:skew(-80deg,0);}
+  43% { opacity:1; -o-transform:scale(1,1);  -o-transform:skew(-90deg,0);}
+  80% {}
+}
+
+/* glitch span colorization */
+
+.buzz_wrapper span{
+    position:absolute;
+    filter: blur(1px); 
+    -webkit-filter: blur(1px); 
+    -moz-filter: blur(1px);
+    -o-filter: blur(1px); 
+    -ms-filter: blur(1px);
+}
+
+.buzz_wrapper span:nth-child(1){
+    color:red;
+    margin-left:-2px;
+    filter: blur(2px); 
+    -webkit-filter: blur(2px); 
+    -moz-filter: blur(2px);
+    -o-filter: blur(2px); 
+    -ms-filter: blur(2px);
+}
+
+.buzz_wrapper span:nth-child(2){
+    color:green;
+    margin-left:2px;
+    filter: blur(2px); 
+    -webkit-filter: blur(2px); 
+    -moz-filter: blur(2px);
+    -o-filter: blur(2px); 
+    -ms-filter: blur(2px);
+}
+.buzz_wrapper span:nth-child(3){
+    color:blue;
+    position:20px 0;
+    -webkit-filter: blur(1px); 
+    -moz-filter: blur(1px);
+    -o-filter: blur(1px); 
+    -ms-filter: blur(1px);
+}
+.buzz_wrapper span:nth-child(4){
+    color:#fff;
+    text-shadow:0 0 50px rgba(255,255,255,0.4);
+    -webkit-filter: blur(1px); 
+    -moz-filter: blur(1px);
+    -o-filter: blur(1px); 
+    -ms-filter: blur(1px);
+}
+.buzz_wrapper span:nth-child(5){
+    color:rgba(255,255,255,0.4);
+     -webkit-filter: blur(15px); 
+    -moz-filter: blur(15px);
+    -o-filter: blur(15px); 
+    -ms-filter: blur(15px);
+}
+
+.buzz_wrapper span:nth-child(2){
+    animation: jerkgreen 1s infinite;
+    -webkit-animation: jerkgreen 1s infinite;
+    -moz-animation: jerkgreen 1s infinite;
+    -o-animation: jerkgreen 1s infinite;
+}
+
+.buzz_wrapper span:nth-child(3){
+    -webkit-animation: jerkblue 1s infinite;
+    -moz-animation: jerkblue 1s infinite;
+    -o-animation: jerkblue 1s infinite;
+}
+
+@-webkit-keyframes jerkblue {
+  0% { left:0; }
+  30% { left:0; }
+  31% { left:10px; }
+  32% { left:0; }
+  98% { left:0; }
+  100% { left:10px; }
+
+@-webkit-keyframes jerkgreen {
+  0% { left:0; }
+  30% { left:0; }
+  31% { left:-10px; }
+  32% { left:0; }
+  98% { left:0; }
+  100% { left:-10px; }
+}
+
+@-o-keyframes jerkblue {
+  0% { left:0; }
+  30% { left:0; }
+  31% { left:10px; }
+  32% { left:0; }
+  98% { left:0; }
+  100% { left:10px; }
+
+@-o-keyframes jerkgreen {
+  0% { left:0; }
+  30% { left:0; }
+  31% { left:-10px; }
+  32% { left:0; }
+  98% { left:0; }
+  100% { left:-10px; }
+}
+
+@-moz-keyframes jerkblue {
+  0% { left:0; }
+  30% { left:0; }
+  31% { left:10px; }
+  32% { left:0; }
+  98% { left:0; }
+  100% { left:10px; }
+
+@-moz-keyframes jerkgreen {
+  0% { left:0; }
+  30% { left:0; }
+  31% { left:-10px; }
+  32% { left:0; }
+  98% { left:0; }
+  100% { left:-10px; }
+}

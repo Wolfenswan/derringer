@@ -1,0 +1,89 @@
+@import "glitch.css";
+
+html {
+    background-color:black;
+    text-transform: uppercase;
+}
+
+body {
+    color:white;
+    font-size: 1em;
+    letter-spacing: 10px;
+    font-family: sans-serif;
+}
+
+a {
+ color: white;
+ text-decoration: none;
+}
+
+div {
+    text-align:center;
+    width:99%;
+}
+
+.top {
+    position:absolute;
+    top:5%;
+    font-size: 5em;
+    letter-spacing: 25px;
+}
+
+.center {
+   position: absolute;
+   top: 35%;
+}
+
+.center-top {
+   font-size: 2em;
+   letter-spacing: 15px;
+   margin-bottom: 20px;
+}
+
+.center-main {
+    letter-spacing: 5px; 
+}
+
+.center-bottom {
+   margin-top: 20px;
+   font-size: 1em;
+   letter-spacing: 5px; 
+}
+
+.bottom {
+    position: absolute;
+    bottom: 2%;
+}
+
+.video {
+    display: inline;
+    padding: 0px 20px 0px 20px;
+}
+
+#footnote {
+   font-size: 0.5em;
+   letter-spacing: 5px;
+}
+
+input {
+    font-size: 1em;
+    letter-spacing: 5px;
+    color:white;
+    background-color:black;
+    text-transform: uppercase;
+    border: none;
+    width: 250px;
+}
+
+input:focus{
+    outline: none;
+}
+
+#input-underline {
+    position:relative;
+    top:-23px;
+    font-size: 1.5em;
+    text-transform: uppercase;
+    letter-spacing: 10px;
+    width: 500px;
+}
