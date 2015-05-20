@@ -10,9 +10,9 @@ http://codepen.io/cRckls/pen/tvbgG
 /* glitch div animation */
 
 .buzz_wrapper div{
-  -webkit-animation: jerkwhole 60ms infinite;
-  -moz-animation: jerkwhole 60ms infinite;
-  -o-animation: jerkwhole 60ms infinite;
+  -webkit-animation: jerkwhole 100ms 5;
+  -moz-animation: jerkwhole 100ms 5;
+  -o-animation: jerkwhole 100ms 5;
 }
 
 @-webkit-keyframes jerkwhole {
@@ -97,16 +97,17 @@ http://codepen.io/cRckls/pen/tvbgG
 }
 
 .buzz_wrapper span:nth-child(2){
-    animation: jerkgreen 1s infinite;
-    -webkit-animation: jerkgreen 1s infinite;
-    -moz-animation: jerkgreen 1s infinite;
-    -o-animation: jerkgreen 1s infinite;
+    animation: jerkgreen 1s 2;
+    -webkit-animation: jerkgreen 1s 2;
+    -moz-animation: jerkgreen 1s 2;
+    -o-animation: jerkgreen 1s 2;
 }
 
 .buzz_wrapper span:nth-child(3){
-    -webkit-animation: jerkblue 1s infinite;
-    -moz-animation: jerkblue 1s infinite;
-    -o-animation: jerkblue 1s infinite;
+    animation: jerkblue 100ms 5;
+    -webkit-animation: jerkblue 100ms 5;
+    -moz-animation: jerkblue 100ms 5;
+    -o-animation: jerkblue 100ms 5;
 }
 
 @-webkit-keyframes jerkblue {
