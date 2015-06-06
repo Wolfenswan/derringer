@@ -64,7 +64,7 @@ http://codepen.io/cRckls/pen/tvbgG
 }
 
 .buzz_wrapper span:nth-child(2){
-    color:green;
+    color:blue;
     margin-left:2px;
     filter: blur(2px); 
     -webkit-filter: blur(2px); 
@@ -73,7 +73,7 @@ http://codepen.io/cRckls/pen/tvbgG
     -ms-filter: blur(2px);
 }
 .buzz_wrapper span:nth-child(3){
-    color:blue;
+    color:green;
     position:20px 0;
     -webkit-filter: blur(1px); 
     -moz-filter: blur(1px);
@@ -104,7 +104,7 @@ http://codepen.io/cRckls/pen/tvbgG
 }
 
 .buzz_wrapper span:nth-child(3){
-    animation: jerkblue 100ms 5;
+    animation: jerkblue 100ms 5;    
     -webkit-animation: jerkblue 100ms 5;
     -moz-animation: jerkblue 100ms 5;
     -o-animation: jerkblue 100ms 5;

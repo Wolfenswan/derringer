@@ -1,9 +1,10 @@
-function passwordCheck(input) {
+function passwordCheck(i) {
     //Passwörter für jedermann zu sehen
-    var passwords = ["DERRINGER","DASGOLDENETICKET"];
+    var passwords = ["SCHOENEERSCHEINUNG","MEINSCHWERSTERVERZICHT","HOLTMICHHIERRAUS","BEGIBDICHINGEFAHR"];
     disable_glitch();
-    if ($.inArray(input.toUpperCase(), passwords) !== -1) {
-        $(".center-bottom").html("<a href='test/test.pdf' target='_blank'>DOWNLOAD</a>");
+    var input = i.trim().split(" ").join("").toUpperCase(); //Sanitize input
+    if ($.inArray(input, passwords) !== -1) {
+        $(".center-main").html("<a href='dl/DerRinger-DasGoldeneTicket.zip' target='_blank'>DOWNLOAD</a>");
     } else {
         //$(".center-bottom").html("");
     };

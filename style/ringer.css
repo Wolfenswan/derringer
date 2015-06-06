@@ -1,5 +1,6 @@
 @import "glitch.css";
 
+
 html {
     background-color:black;
     text-transform: uppercase;
@@ -7,7 +8,7 @@ html {
 
 body {
     color:white;
-    font-size: 1em;
+    font-size: 1.5em;
     letter-spacing: 10px;
     font-family:Arial, Helvetica, sans-serif;
 	font-weight:600;
@@ -20,7 +21,7 @@ a {
 
 div {
     text-align:center;
-    width:99%;
+     width:99%;
 }
 
 .top {
@@ -29,6 +30,7 @@ div {
     position:absolute;
     top:5%;
     font-size: 6em;
+    font-size: 6vw;
     letter-spacing: 25px;
 }
 
@@ -60,36 +62,39 @@ div {
     letter-spacing:5px;
 }
 
-.video {
-    display: inline;
-    padding: 0px 20px 0px 20px;
-}
-
 #footnote {
    font-size: 0.5em;
-   letter-spacing: 5px;
+    letter-spacing: 5px;
 }
 
 input {
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 1.5em;
+    font-size: 1em;
     text-transform: uppercase;
     letter-spacing: 10px;
+    font-weight:600;
     color:white;
     background-color:black;
     border: none;
-    width: 500px;
+    width: 1000px;
+    text-align: center;
 }
 
 input:focus{
     outline: none;
 }
 
-#input-underline {
-    position:relative;
-    top:-23px;
-    font-size: 1.5em;
-    text-transform: uppercase;
-    letter-spacing: 10px;
-    width: 500px;
+.video-wrapper {
+    display: flex;
+}
+
+.video-wrapper span{
+    display: block;
+    font-size:0.7em;
+    letter-spacing: 5px; 
+    padding-top: 10px;
+}
+
+video {
+ width: 250px;
 }
